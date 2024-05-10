@@ -2,23 +2,26 @@
 //  ContentView.swift
 //  Pomodoro
 //
-//  Created by Ethan Hyde on 4/6/24.
+//  Created by Ethan Hyde on 5/9/24.
 //
 
 import SwiftUI
 
+// Initial ContentView to show the first selection view
 struct ContentView: View {
+    // Create an instance of the shared observable object
+    @StateObject var model = TimeSelectionModel()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            TimeSelectionView(model: model)
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+// Preview provider for the initial ContentView
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
