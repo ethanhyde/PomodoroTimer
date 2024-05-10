@@ -19,7 +19,7 @@ struct TimeSelectionView: View {
         VStack(spacing: 20) {
             // Hour selection
             VStack{
-                Text("Select Hour")
+                Text("Hour")
                     .font(.title2)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 
@@ -35,7 +35,7 @@ struct TimeSelectionView: View {
             
             // Minute selection
             VStack{
-                Text("Select Minute")
+                Text("Minute")
                     .font(.title2)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 
@@ -51,9 +51,9 @@ struct TimeSelectionView: View {
             
             // Break selection
             VStack {
-                Text("Select short break")
+                Text("Short Break")
                     .font(.title2)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .fontWeight(.bold)
                 
                 // Picker for selecting short break
                 Picker("Minute", selection: $model.selectedShortBreak) {
@@ -63,8 +63,6 @@ struct TimeSelectionView: View {
                 }
                 .pickerStyle(WheelPickerStyle())
             }
-            
-            
             
             // Navigation to the display view
             NavigationLink(destination: TimeDisplayView(model: model)) {
