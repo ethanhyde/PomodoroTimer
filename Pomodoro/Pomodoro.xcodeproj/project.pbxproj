@@ -14,6 +14,7 @@
 		BE2DB94B2BED7D8F0021765F /* TimeDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DB94A2BED7D8F0021765F /* TimeDisplayView.swift */; };
 		BE2DB94D2BED7DB30021765F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DB94C2BED7DB30021765F /* ContentView.swift */; };
 		BE2DB94F2BED7EDF0021765F /* PomodoroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DB94E2BED7EDF0021765F /* PomodoroApp.swift */; };
+		BE2DB9512BF4691A0021765F /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DB9502BF4691A0021765F /* MainMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		BE2DB94A2BED7D8F0021765F /* TimeDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDisplayView.swift; sourceTree = "<group>"; };
 		BE2DB94C2BED7DB30021765F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE2DB94E2BED7EDF0021765F /* PomodoroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroApp.swift; sourceTree = "<group>"; };
+		BE2DB9502BF4691A0021765F /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				BE2799A62BC2306B004E4978 /* Assets.xcassets */,
 				BE2799A82BC2306B004E4978 /* Preview Content */,
 				BE2DB94E2BED7EDF0021765F /* PomodoroApp.swift */,
+				BE2DB9502BF4691A0021765F /* MainMenu.swift */,
 			);
 			path = Pomodoro;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE2DB94F2BED7EDF0021765F /* PomodoroApp.swift in Sources */,
+				BE2DB9512BF4691A0021765F /* MainMenu.swift in Sources */,
 				BE2DB94B2BED7D8F0021765F /* TimeDisplayView.swift in Sources */,
 				BE2DB9472BED7BF10021765F /* TimeSelectionModel.swift in Sources */,
 				BE2DB9492BED7C200021765F /* TimeSelectionView.swift in Sources */,

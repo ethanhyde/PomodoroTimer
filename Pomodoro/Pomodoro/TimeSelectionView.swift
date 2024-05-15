@@ -11,62 +11,78 @@ import SwiftUI
 struct TimeSelectionView: View {
     // An observed object to store the user's selection
     @ObservedObject var model: TimeSelectionModel
-
+    
     var hours: [Int] { Array(0..<24) }   // Hours range from 0 to 23
     var minutes: [Int] { Array(0..<60) } // Minutes range from 0 to 59
-
+    
     var body: some View {
         VStack(spacing: 20) {
-            // Hour selection
-            VStack{
-                Text("Hour")
-                    .font(.title2)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+            HStack {
+                // Hour selection
+                //                VStack {
+                //                    Text("Hour")
+                //                        .font(.title2)
+                //                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                //
+                //                    // Picker to select an hour
+                //                    Picker("Hour", selection: $model.selectedHour) {
+                //                        ForEach(hours, id: \.self) { hour in
+                //                            Text("\(hour)")
+                //                        }
+                //                    }
+                //                    .pickerStyle(WheelPickerStyle())
+                //                }
                 
-                
-                // Picker to select an hour
-                Picker("Hour", selection: $model.selectedHour) {
-                    ForEach(hours, id: \.self) { hour in
-                        Text("\(hour)")
+                // Minute selection
+                VStack {
+                    Text("Minute")
+                        .font(.title2)
+                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    
+                    // Picker to select a minute
+                    Picker("Minute", selection: $model.selectedMinute) {
+                        ForEach(minutes, id: \.self) { minute in
+                            Text("\(minute)")
+                        }
                     }
+                    .pickerStyle(WheelPickerStyle())
                 }
-                .pickerStyle(WheelPickerStyle())
+                
             }
             
-            // Minute selection
-            VStack{
-                Text("Minute")
-                    .font(.title2)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                
-                
-                // Picker to select a minute
-                Picker("Minute", selection: $model.selectedMinute) {
-                    ForEach(minutes, id: \.self) { minute in
-                        Text("\(minute)")
+            HStack {
+                // Short break selection
+                VStack {
+                    Text("Short Break")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                    
+                    // Picker for selecting short break
+                    Picker("Minute", selection: $model.selectedShortBreak) {
+                        ForEach(minutes, id: \.self) { minute in
+                            Text("\(minute)")
+                        }
                     }
+                    .pickerStyle(WheelPickerStyle())
                 }
-                .pickerStyle(WheelPickerStyle())
-            }
-            
-            // Break selection
-            VStack {
-                Text("Short Break")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                
-                // Picker for selecting short break
-                Picker("Minute", selection: $model.selectedShortBreak) {
-                    ForEach(minutes, id: \.self) { minute in
-                        Text("\(minute)")
+                VStack {
+                    Text("Long Break")
+                        .font(.title2)
+                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    
+                    // Picker to select length of long break
+                    Picker("Minute", selection: $model.selectedLongBreak) {
+                        ForEach(minutes, id: \.self) { minute in
+                            Text("\(minute)")
+                        }
                     }
+                    .pickerStyle(WheelPickerStyle())
                 }
-                .pickerStyle(WheelPickerStyle())
             }
             
             // Navigation to the display view
             NavigationLink(destination: TimeDisplayView(model: model)) {
-                Text("Go to Display")
+                Text("Set Timer")
             }
             .padding()
         }
