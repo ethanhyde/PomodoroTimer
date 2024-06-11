@@ -1,10 +1,3 @@
-//
-//  TimeSelectionView.swift
-//  Pomodoro
-//
-//  Created by Ethan Hyde on 5/9/24.
-//
-
 import SwiftUI
 
 // View to allow the user to select the hour and minute
@@ -18,21 +11,6 @@ struct TimeSelectionView: View {
     var body: some View {
         VStack(spacing: 20) {
             HStack {
-                // Hour selection
-                //                VStack {
-                //                    Text("Hour")
-                //                        .font(.title2)
-                //                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                //
-                //                    // Picker to select an hour
-                //                    Picker("Hour", selection: $model.selectedHour) {
-                //                        ForEach(hours, id: \.self) { hour in
-                //                            Text("\(hour)")
-                //                        }
-                //                    }
-                //                    .pickerStyle(WheelPickerStyle())
-                //                }
-                
                 // Minute selection
                 VStack {
                     Text("Minute")

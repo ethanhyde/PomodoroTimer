@@ -1,17 +1,45 @@
-//
-//  MainMenu.swift
-//  Pomodoro
-//
-//  Created by Ethan Hyde on 5/14/24.
-//
-
 import SwiftUI
 
 struct MainMenu: View {
+    @StateObject var model = TimeSelectionModel()
+
     var body: some View {
-        Text("Welcome to my app")
-            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-        
+        NavigationView {
+            VStack {
+                Text("Home")
+                    .padding()
+                    .font(.title)
+                    .bold()
+                
+                NavigationLink (destination: AboutPage()){
+                    Text("About")
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                        .padding()
+                        .background(Color.gray)
+                        .foregroundColor(.black)
+                        .cornerRadius(100)
+                }
+                
+                NavigationLink (destination: TimeSelectionView(model: model)) {
+                    Text("Timer")
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                        .padding()
+                        .background(Color.gray)
+                        .foregroundColor(.black)
+                        .cornerRadius(100)
+                }
+                
+                NavigationLink (destination: Todo()) {
+                    Text("Tasks")
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                        .padding()
+                        .background(Color.gray)
+                        .foregroundColor(.black)
+                        .cornerRadius(100)
+                }
+            }
+            
+        }
     }
 }
 

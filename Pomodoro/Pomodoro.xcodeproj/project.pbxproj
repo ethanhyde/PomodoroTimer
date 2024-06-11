@@ -15,6 +15,8 @@
 		BE2DB94D2BED7DB30021765F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DB94C2BED7DB30021765F /* ContentView.swift */; };
 		BE2DB94F2BED7EDF0021765F /* PomodoroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DB94E2BED7EDF0021765F /* PomodoroApp.swift */; };
 		BE2DB9512BF4691A0021765F /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DB9502BF4691A0021765F /* MainMenu.swift */; };
+		BE2F37022C0FB9BB000FC6CD /* AboutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F37012C0FB9BB000FC6CD /* AboutPage.swift */; };
+		BE2F37042C100CBF000FC6CD /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F37032C100CBF000FC6CD /* Todo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		BE2DB94C2BED7DB30021765F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE2DB94E2BED7EDF0021765F /* PomodoroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroApp.swift; sourceTree = "<group>"; };
 		BE2DB9502BF4691A0021765F /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		BE2F37012C0FB9BB000FC6CD /* AboutPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPage.swift; sourceTree = "<group>"; };
+		BE2F37032C100CBF000FC6CD /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				BE2799A82BC2306B004E4978 /* Preview Content */,
 				BE2DB94E2BED7EDF0021765F /* PomodoroApp.swift */,
 				BE2DB9502BF4691A0021765F /* MainMenu.swift */,
+				BE2F37032C100CBF000FC6CD /* Todo.swift */,
+				BE2F37012C0FB9BB000FC6CD /* AboutPage.swift */,
 			);
 			path = Pomodoro;
 			sourceTree = "<group>";
@@ -152,7 +158,9 @@
 				BE2DB94F2BED7EDF0021765F /* PomodoroApp.swift in Sources */,
 				BE2DB9512BF4691A0021765F /* MainMenu.swift in Sources */,
 				BE2DB94B2BED7D8F0021765F /* TimeDisplayView.swift in Sources */,
+				BE2F37042C100CBF000FC6CD /* Todo.swift in Sources */,
 				BE2DB9472BED7BF10021765F /* TimeSelectionModel.swift in Sources */,
+				BE2F37022C0FB9BB000FC6CD /* AboutPage.swift in Sources */,
 				BE2DB9492BED7C200021765F /* TimeSelectionView.swift in Sources */,
 				BE2DB94D2BED7DB30021765F /* ContentView.swift in Sources */,
 			);

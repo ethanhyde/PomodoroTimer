@@ -1,10 +1,3 @@
-//
-//  TimeSelectionModel.swift
-//  Pomodoro
-//
-//  Created by Ethan Hyde on 5/9/24.
-//
-
 import Foundation
 import Combine
 

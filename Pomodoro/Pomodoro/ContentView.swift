@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Pomodoro
-//
-//  Created by Ethan Hyde on 5/9/24.
-//
-
 import SwiftUI
 
 // Initial ContentView to show the first selection view
@@ -22,6 +15,6 @@ struct ContentView: View {
 // Preview provider for the initial ContentView
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainMenu()
     }
 }
